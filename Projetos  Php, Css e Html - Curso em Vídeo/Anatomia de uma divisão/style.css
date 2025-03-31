@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* Estilização geral do body */
+* {
+    font-family: 'Poppins', sans-serif; /* Fonte mais moderna e leve */
+    box-sizing: border-box;
+}
+
+/* Estilização do body */
+body {
+    background: linear-gradient(180deg, #1f4037, #99f2c8); /* Gradiente suave */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+/* Estilização do container (header, main, section, article) */
+header, main, section, article {
+    max-width: 700px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilização do título principal */
+header > h1 {
+    font-size: 2.5rem;
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Gradiente suave */
+    -webkit-background-clip: text;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Estilização do footer */
+footer {
+    width: 100%;
+    background-color: #291f6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* Estilização do parágrafo */
+p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/* Estilização dos títulos secundários */
+h2, h3, h4 {
+    color: #372991;
+    margin: 10px 0;
+}
+
+/* Estilização dos links */
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2); /* Fundo sutil nos links */
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Efeito de transição suave */
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilização das tabelas */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 0;
+    border: 1px solid #372991;
+}
+
+table th {
+    background-color: #372991;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    background-color: rgba(55, 41, 145, 0.1); /* Cor de fundo suave */
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(55, 41, 145, 0.2);
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(55, 41, 145, 0.3);
+}
+
+/* Estilização das listas */
+ul {
+    list-style: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo sutil */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+ul > li::marker {
+    color: #372991; /* Cor de marcador */
+}
+
+/* Estilização de formulários */
+form {
+    background: rgba(55, 41, 145, 0.2); /* Fundo suave */
+    padding: 20px;
+    border-radius: 12px;
+}
+
+form label {
+    font-size: 1rem;
+    background: rgba(55, 41, 145, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type=text], input[type=number], select, input[type=date], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input[type=submit], input[type=reset], input[type=button], button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #372991;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, button:hover {
+    background-color: #291f6c;
+}
+
+/* Estilização dos fieldsets */
+fieldset {
+    border: 0.5px dotted #372991;
+}
+
+fieldset > legend {
+    font-size: 1rem;
+    background: rgba(55, 41, 145, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+input[type=radio] + label, input[type=checkbox] + label {
+    font-size: 1rem;
+    display: inline-block;
+    background: transparent;
+}
+
+/* Animação para o título */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
